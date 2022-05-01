@@ -1,0 +1,104 @@
+@import './color.scss';
+
+$font-body: 'Lato', 'Inter', sans-serif;
+
+body {
+	font-family: $font-body;
+	font-weight: 400;
+}
+
+.font-primary {
+	font-family: $font-body !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+p, ul, span, li, td, th {
+	font-size: 14px;
+}
+
+.hover-black:hover {
+	color: black !important;
+}
+
+.text-white {
+	color: $color-light !important;
+}
+
+.text-dark {
+	color: #242424;
+}
+
+.text-primary {
+	color: $color-primary !important;
+}
+
+.text-secondary {
+	color: $color-secondary !important;
+}
+
+.text-secondary-light {
+	color: $color-secondary-light !important;
+}
+
+.bg-primary {
+	@extend %primary;
+	border: none;
+}
+
+.bg-secondary {
+	@extend %secondary;
+	border: none;
+}
+
+.bg-white {
+	background-color: $color-light;
+}
+
+.bg-none {
+	background-color: transparent !important;
+	border: none;
+}
+
+.segoe-font {
+	font-family: 'Segoe UI', sans-serif !important;
+}
+
+.bg-secondary-light {
+	@extend %secondary-light;
+	border: none;
+}
+
+.shadow-light {
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+::-webkit-scrollbar {
+	width:6px;
+	height: 6px;
+
+	&-track {
+		background: #e3e3e3;
+		border-radius: 11px;
+	}
+	
+	&-thumb {
+		background: #a3a3a3; 
+		border-radius: 12px;
+		margin: 0 10px;
+	}
+}
+
+@for $i from 1 to 7 {
+	.z-#{$i} {
+		z-index: #{$i} !important;
+	}
+}
+
+@for $i from 0 to 10 {
+	.opacity-#{$i} {
+		opacity: #{$i/10} !important;
+	}
+}

@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoordinateConversionService</name>
+    </assembly>
+    <members>
+        <member name="T:CoordinateConversionService.CRS.IMapProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProperty.UnitCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProperty.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProperty.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProperty.Unit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.IUnitOfMeasure">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IUnitOfMeasure.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IUnitOfMeasure.Quantity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IUnitOfMeasure.FactorB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IUnitOfMeasure.FactorC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.MapProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProperty.UnitCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProperty.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProperty.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProperty.Unit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.ReferenceEllipsoid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.ReferenceEllipsoid.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.ReferenceEllipsoid.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.ReferenceEllipsoid.SemiMajorAxis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.ReferenceEllipsoid.InverseFlattening">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.CRS.ReferenceEllipsoid.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.CRS.ReferenceEllipsoid.#ctor(System.Int32,System.String,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="code"></param>
+            <param name="name"></param>
+            <param name="semiMajorAxis"></param>
+            <param name="inverseFlattening"></param>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.GeoCoord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.CRS.GeoCoord.Latitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.CRS.GeoCoord.Longitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.CRS.GeoCoord.#ctor(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="latitude"></param>
+            <param name="longitude"></param>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.GridCoord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.CRS.GridCoord.Easting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.CRS.GridCoord.Northing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.CRS.GridCoord.#ctor(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="easting"></param>
+            <param name="northing"></param>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.IDatumInfo">
+            <summary>
+            Exposes the datum name and its reference ellipsoid
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IDatumInfo.Name">
+            <summary>
+            Get the name of the geoditic datum
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IDatumInfo.Ellipsoid">
+            <summary>
+            Get the reference ellipsoid parameters for the datum 
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.IConversionResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.Easting">
+            <summary>
+            Get the easting in meters (m)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.Northing">
+            <summary>
+            Get the northing in meters (m)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.Latitude">
+            <summary>
+            Get the latitude (radian)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.Longitude">
+            <summary>
+            Get the longitude in (radian)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.UtmScaleFactor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IConversionResult.MeridianOfConvergence">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.IMapProjectionInfo">
+            <summary>
+            Exposes the map projection parameters 
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProjectionInfo.LatitudeOfNaturalOrigin">
+            <summary>
+            Get the Latitude of natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProjectionInfo.LongitudeOfNaturalOrigin">
+            <summary>
+            Get the Longitude of natural origin (Central meridian)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProjectionInfo.ScaleFactor">
+            <summary>
+            Get the Scale Factor at the natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProjectionInfo.FalseEasting">
+            <summary>
+            Get the value assigned to the abscissa (east or west) axis of the 
+            projection grid at the natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IMapProjectionInfo.FalseNorthing">
+            <summary>
+            Get the value assigned to the ordinate (north or south) axis of the 
+            projection grid at the natural origin
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.CRS.IReferenceEllipsoidInfo">
+            <summary>
+            Exposes the common parameters used to define a reference ellipsoid
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IReferenceEllipsoidInfo.Name">
+            <summary>
+            Get the name of the reference ellipsoid
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IReferenceEllipsoidInfo.SemiMajorAxis">
+            <summary>
+            Get the value of the semi-major axis of the ellipsoid measured in meters(m) 
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.IReferenceEllipsoidInfo.InverseFlattening">
+            <summary>
+            Get the inverse flattening of the ellipsoid 
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProjectionInfo.LongitudeOfNaturalOrigin">
+            <summary>
+            Get the Longitude of natural origin (Central meridian)
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProjectionInfo.ScaleFactor">
+            <summary>
+            Get the Scale Factor at the natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProjectionInfo.FalseEasting">
+            <summary>
+            Get the value assigned to the abscissa (east or west) axis of the 
+            projection grid at the natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.CRS.MapProjectionInfo.FalseNorthing">
+            <summary>
+            Get the value assigned to the ordinate (north or south) axis of the 
+            projection grid at the natural origin
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.Entities.Ellipsoid.SemiMajorAxis">
+            <summary>
+            Get or Set the semi-major axis for the ellipsoid. 
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.Entities.Ellipsoid.SemiMinorAxis">
+            <summary>
+            Get or Set the semi-minor axis for the ellipsoid.
+            </summary>
+        </member>
+        <member name="P:CoordinateConversionService.Entities.Ellipsoid.UnitOfMeasureCode">
+            <summary>
+            Get or Set the unit code for which distances are measured.
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.Services.GeodeticService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.#ctor">
+            <summary>
+            Create an instance of GeodeticService class. 
+            Note: You must call the Init() method to load and initialise geodetic data.
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.ReInit">
+            <summary>
+            Re-initialise geodetic data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.GetAreas">
+            <summary>
+            Returns all supported areas/regions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.GetDatums(System.Int32)">
+            <summary>
+            Returns both local and global datums for the specified area
+            </summary>
+            <param name="areaCode">Specify area code</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.GetCoordinateReferenceSystems(System.Int32,System.Int32)">
+            <summary>
+            Returns all coordinate reference systems for the specified area and datum
+            </summary>
+            <param name="areaCode">Specify the area code</param>
+            <param name="datumCode">Specify the datum code</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.GetMapProjectionInfo(CoordinateConversionService.CRS.ICoordinateReferenceSystemInfo)">
+            <summary>
+            Returns the map projection parameters for the specified 
+            Coordinate Reference System (CRS)
+            </summary>
+            <param name="crsInfo">Specify CRS information</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.GetUnitOfMeasure(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="unitCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.ConvertFromUtmToGcs(CoordinateConversionService.CRS.GridCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="utmCoord">Specify the grid coordinate value in (m,m) </param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.ConvertFromGcsToUtm(CoordinateConversionService.CRS.GeoCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="geoCoord">Specify the geographical coordinate value</param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.GeodeticService.Release">
+            <summary>
+            Clear cached data
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.Services.IGeodeticService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.ReInit">
+            <summary>
+            Re-initialise geodetic data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.GetAreas">
+            <summary>
+            Returns all supported areas/regions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.GetDatums(System.Int32)">
+            <summary>
+            Returns both local and global datums for the specified area
+            </summary>
+            <param name="areaCode">Specify area code</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.GetCoordinateReferenceSystems(System.Int32,System.Int32)">
+            <summary>
+            Returns all coordinate reference systems for the specified area and datum
+            </summary>
+            <param name="areaCode">Specify the area code</param>
+            <param name="datumCode">Specify the datum code</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.GetMapProjectionInfo(CoordinateConversionService.CRS.ICoordinateReferenceSystemInfo)">
+            <summary>
+            Returns the map projection parameters for the specified 
+            Coordinate Reference System (CRS)
+            </summary>
+            <param name="crsInfo">Specify CRS information</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.ConvertFromUtmToGcs(CoordinateConversionService.CRS.GridCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="utmCoord">Specify the grid coordinate value</param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.ConvertFromGcsToUtm(CoordinateConversionService.CRS.GeoCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="geoCoord">Specify the geographical coordinate value</param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="M:CoordinateConversionService.Services.IGeodeticService.Release">
+            <summary>
+            Clear cached data
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.Utility.CoordinateConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CoordinateConverter.ConvertFromUtmToGcs(CoordinateConversionService.CRS.GridCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="utmCoord">Specify the grid coordinate value</param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CoordinateConverter.ConvertFromGcsToUtm(CoordinateConversionService.CRS.GeoCoord,CoordinateConversionService.CRS.IReferenceEllipsoidInfo,CoordinateConversionService.CRS.IMapProjectionInfo)">
+            <summary>
+            Converts from grid coordinate (Easting and Northing) system to geographical 
+            coordinate (Longitude and Latitude) system.
+            Note: All distances are required in meters (m) and angles in radian 
+            </summary>
+            <param name="gcsCoord">Specify the geographical coordinate value</param>
+            <param name="ellipsoid">Specify the reference ellipsoid</param>
+            <param name="projection">Specify the map projection parameters</param>
+            <returns>Returns an IConversionResult which contains the required output information</returns>
+        </member>
+        <member name="T:CoordinateConversionService.Utility.GeoCoordinate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoCoordinate.Latitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoCoordinate.Longitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.Utility.GeoPosition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoPosition.North">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoPosition.South">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoPosition.East">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CoordinateConversionService.Utility.GeoPosition.West">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CoordinateConversionService.Utility.CrsConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertDegreeToSexagesimalDms(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            Returns a sexagesimal  
+            </summary>
+            <param name="valueInDegree"></param>
+            <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertDegreeToSexagesimalDm(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="valueInDegree"></param>
+            <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertDegreeToSexagesimalD(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="valueInDegree"></param>
+            <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertRadianToSexagesimalDms(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="valueInRadian"></param>
+            /// <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertRadianToSexagesimalDm(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="valueInRadian"></param>
+            /// <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertRadianToSexagesimalD(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="valueInRadian"></param>
+            <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.GetCardinalDirection(System.Double,CoordinateConversionService.Utility.GeoCoordinate)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="coordType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertDegreeToSexagesimal(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="valueInDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertDegreeToRadian(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="valueInDegree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertRadianToDegree(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="valueInRadian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.CrsConverter.ConvertSexagesimalToDegree(System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="sexagesimalDms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoordinateConversionService.Utility.Util.SetValue(System.Reflection.PropertyInfo,System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyInfo"></param>
+            <param name="obj"></param>
+            <param name="value"></param>
+        </member>
+    </members>
+</doc>

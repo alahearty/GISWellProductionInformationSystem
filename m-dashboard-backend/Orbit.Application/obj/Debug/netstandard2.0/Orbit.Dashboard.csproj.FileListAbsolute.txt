@@ -1,0 +1,15 @@
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\Orbit.Dashboard.deps.json
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\Orbit.Dashboard.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\Orbit.Dashboard.pdb
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\CoordinateConversionService.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\Orbit.Models.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\Orbit.Models.pdb
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\bin\Debug\netstandard2.0\CoordinateConversionService.xml
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.csproj.AssemblyReference.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.AssemblyInfoInputs.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.AssemblyInfo.cs
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.csproj.CopyComplete
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Dashboard\obj\Debug\netstandard2.0\Orbit.Dashboard.pdb

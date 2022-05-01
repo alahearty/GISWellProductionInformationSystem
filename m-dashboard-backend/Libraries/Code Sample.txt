@@ -1,0 +1,20 @@
+	    IGeodeticService service = new GeodeticService();
+            GridCoord coord = new GridCoord(510099.66, 70252.37);
+
+            int areaCode = 1178;
+            int datumCode = 6326;
+            int crsCode = 32664;
+
+            var datums = service.GetDatums(areaCode);
+            var datum = datums.First(x => x.Code == datumCode);
+            var crsList = service.GetCoordinateReferenceSystems(areaCode, datumCode);
+            var crs = crsList.First(x => x.Code == crsCode);
+
+            var map = service.GetMapProjectionInfo(crs);
+            IConversionResult result = service.ConvertFromUtmToGcs(coord, datum.Ellipsoid, map);
+
+            string lat = CrsConverter.ConvertRadianToSexagesimalDms(result.Longitude, GeoCoordinate.Longitude);
+            string longitude = CrsConverter.ConvertRadianToSexagesimalDms(result.Latitude, GeoCoordinate.Latitude);
+
+            GeoCoord geoCoord = new GeoCoord(result.Latitude, result.Longitude);
+            IConversionResult result2 = service.ConvertFromGcsToUtm(geoCoord, datum.Ellipsoid, map);

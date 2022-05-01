@@ -1,0 +1,66 @@
+html[data-theme='light'] {
+	--nav-background: #FFFFFF;
+	--body-background: #E5E5E5;
+	--background-alt: #f1f1f1;
+	--text-light: #000000;
+	--text-alt: #4F4F4F;
+	--table-border: 1px solid rgb(219, 219, 219);
+	--table-background: #FFF;
+	--active-nav: #e4e4e4;
+	--input-border: 1px solid #ced4da;
+}
+
+html {
+	--nav-background: #262626;
+	--body-background: #262626;
+	--background-alt: #353535;
+	--text-light: #FFF;
+	--text-alt: rgb(206, 205, 205);
+	--table-border: 1px solid rgb(37, 35, 35);
+	--table-background: #353535;
+	--active-nav: #303030;
+	--input-border: 1px solid rgb(85, 85, 85);
+}
+
+$color-light: #fff;
+$color-primary: #376899;
+$color-secondary: var(--text-alt);
+$color-danger: #e54d44;
+$color-warning: #facb1f;
+$color-success: #4caf50;
+
+$color-text: #242424;
+
+$color-primary-light: #bcc4de;
+$color-secondary-light: #f6f6f6;
+$color-danger-light: #f6c1be;
+$color-warning-light: #fdedb1;
+$color-success-light: #c1e3c2;
+
+$color-warning-text: #78620f;
+$color-success-text: #1c621f;
+
+%primary {
+	background-color: $color-primary !important;
+	color: $color-light;
+}
+
+%secondary {
+	background-color: $color-secondary !important;
+	color: $color-text;
+}
+
+%secondary-light {
+	background-color: $color-secondary-light !important;
+	color: $color-secondary;
+}
+
+%warning {
+	background-color: $color-warning !important;
+	color: $color-warning-text;
+}
+
+%warning-light {
+	background-color: $color-warning-light !important;
+	color: $color-warning-text;
+}

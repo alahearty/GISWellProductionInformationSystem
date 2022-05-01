@@ -1,0 +1,10 @@
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\bin\Debug\netstandard2.0\Orbit.Models.deps.json
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\bin\Debug\netstandard2.0\Orbit.Models.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\bin\Debug\netstandard2.0\Orbit.Models.pdb
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.csproj.AssemblyReference.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.AssemblyInfoInputs.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.AssemblyInfo.cs
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.csproj.CoreCompileInputs.cache
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.dll
+C:\Users\alapher.woriayibapri\Desktop\SEPAL Online\m-dashboard-backend\Orbit.Models\obj\Debug\netstandard2.0\Orbit.Models.pdb
